@@ -303,7 +303,6 @@ const RegisterForm = ({ user }: { user: User }) => {
           placeholder="Ex. 123456789"
         />
 
-
         <CustomFormField
           control={form.control}
           fieldType={FormFieldType.SKELETON}
