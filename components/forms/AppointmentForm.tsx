@@ -60,8 +60,11 @@ const AppointmentForm = ({
         status = "pending";
     }
 
+    
+
     try {
       if (type === "create" && patientId) {
+
         const appointmentData = {
           userId,
           patient: patientId,
@@ -73,11 +76,12 @@ const AppointmentForm = ({
         };
         const appointment = await createAppointment(appointmentData);
 
+
         if (appointment) {
-          form.reset(),
-            router.push(
-              `/patients/${userId}/new-appointment/success?appointmentId=${appointment.id}`
-            );
+          form.reset();
+          router.push(
+            `/patients/${userId}/new-appointment/success?appointmentId=${appointment.$id}`
+          );
         }
       }
     } catch (error) {
