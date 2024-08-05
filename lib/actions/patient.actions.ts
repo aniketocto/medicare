@@ -14,6 +14,8 @@ import { parseStringify } from "../utils";
 import { InputFile } from "node-appwrite/file";
 
 export const createUser = async (user: CreateUserParams) => {
+  console.log("Enter create user");
+  
   try {
     const newUser = await users.create(
       ID.unique(),
@@ -22,7 +24,8 @@ export const createUser = async (user: CreateUserParams) => {
       undefined,
       user.name
     );
-
+    console.log('New User',newUser);
+    
     return parseStringify(newUser);
   } catch (error: any) {
     if (error && error?.code === 409) {
@@ -71,7 +74,7 @@ export const registerPatient = async ({
         ...patient,
       }
     );
-
+    
     return parseStringify(newPatient);
   } catch (error) {
     console.log(error);

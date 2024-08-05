@@ -4,10 +4,12 @@ import { DataTable } from "@/components/table/DataTable";
 import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Admin = async () => {
   const appointments = await getRecentAppointmentList();
+  
+
   return (
     <div className="mx-auto max-w-7xl flex-col flex  space-y-14">
       <header className="admin-header">

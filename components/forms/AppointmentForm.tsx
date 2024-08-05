@@ -58,7 +58,6 @@ export const AppointmentForm = ({
     values: z.infer<typeof AppointmentFormValidation>
   ) => {
 
-    console.log({type});
     
 
     setIsLoading(true);
@@ -96,7 +95,6 @@ export const AppointmentForm = ({
           );
         }
       } else {
-        console.log('updating schedule');
         
         const appointmentToUpdate = {
           userId,
@@ -109,7 +107,6 @@ export const AppointmentForm = ({
           },
           type,
         };
-        console.log({appointmentToUpdate});
         
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
