@@ -18,7 +18,7 @@ import { Appointment } from "@/types/appwrite.types";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-import CustomFormField  from "../CustomFormField";
+import CustomFormField from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { Form } from "../ui/form";
 import { FormFieldType } from "./PatientsForms";
@@ -57,9 +57,6 @@ export const AppointmentForm = ({
   const onSubmit = async (
     values: z.infer<typeof AppointmentFormValidation>
   ) => {
-
-    
-
     setIsLoading(true);
 
     let status;
@@ -95,7 +92,6 @@ export const AppointmentForm = ({
           );
         }
       } else {
-        
         const appointmentToUpdate = {
           userId,
           appointmentId: appointment?.$id!,
@@ -107,7 +103,7 @@ export const AppointmentForm = ({
           },
           type,
         };
-        
+
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
         if (updatedAppointment) {
@@ -180,7 +176,9 @@ export const AppointmentForm = ({
             />
 
             <div
-              className={`flex flex-col gap-6  ${type === "create" && "xl:flex-row"}`}
+              className={`flex flex-col gap-6  ${
+                type === "create" && "xl:flex-row"
+              }`}
             >
               <CustomFormField
                 fieldType={FormFieldType.TEXTAREA}
@@ -215,7 +213,9 @@ export const AppointmentForm = ({
 
         <SubmitButton
           isLoading={isLoading}
-          className={`${type === "cancel" ? "shad-danger-btn" : "shad-primary-btn"} w-full`}
+          className={`${
+            type === "cancel" ? "shad-danger-btn" : "shad-primary-btn"
+          } w-full`}
         >
           {buttonLabel}
         </SubmitButton>
