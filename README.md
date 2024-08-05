@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## ⚙️ Tech Stack
+- Next.js
+- TypeScript
+- appwrite
+- twilio
+- sentry
+- Tailwind CSS
 
-First, run the development server:
+
+
+
+## ⚡ Quick Start
+
+Follow these steps to set up the project locally on your machine.
+
+Prerequisites
+
+Make sure you have the following installed on your machine:
+- [git](https://git-scm.com/)
+- [node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+
+## Cloning the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/aniketocto/medicare
+cd SmartDocs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install the project dependencies using npm:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm install
+```
 
-## Learn More
+## ⚡ Quick Start
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to set up the project locally on your machine.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Make sure you have the following installed on your machine:
+- [git](https://git-scm.com/)
+- [node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cloning the Repository
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git clone https://github.com/aniketocto/medicare
+cd medicare
+```
+
+## Installation
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+Running the Project
+
+```
+npm run dev
+```
+
+Open http://localhost:3000 in your browser to view the project.
+
+
+
