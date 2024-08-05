@@ -101,7 +101,7 @@ export const updateAppointment = async ({
     if (!updatedAppointment) throw Error;
 
     const smsMessage = `
-    Hi, it's Medicare.
+    Hi, it is Medicare.
     ${
       type === "schedule"
         ? `Your apointment has been scheduled for ${
